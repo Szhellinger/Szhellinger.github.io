@@ -5,28 +5,78 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-02T15:34:57.944Z</updated>
+  <updated>2017-03-14T15:15:46.191Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
     <name>Schell</name>
-    
+    <email>zouhe@sjtu.edu.cn</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python itertools的使用</title>
+    <link href="http://yoursite.com/2017/03/14/python-itertools/"/>
+    <id>http://yoursite.com/2017/03/14/python-itertools/</id>
+    <published>2017-03-14T14:00:22.000Z</published>
+    <updated>2017-03-14T15:15:46.191Z</updated>
+    
+    <content type="html"><![CDATA[<p>最开始是遇到一个问题，如何在以<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">file = open(file_address, <span class="string">'w'</span>)</div></pre></td></tr></table></figure></p>
+<p>的方法打开的文件中，跳过第一行读取，因为第一行可能是配置信息，或者csv文件的列头信息，需要跳过读取。<br>经过搜索找到了这样的<a href="http://blog.csdn.net/vernice/article/details/46501885" target="_blank" rel="external">方法</a>:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> itertools</div><div class="line"><span class="keyword">for</span> line <span class="keyword">in</span> itertools.islice(file, <span class="number">1</span>, <span class="keyword">None</span>):</div><div class="line">	<span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>测试有效。<br>python中的itertools模块内置一系列的迭代器创建函数，详细：<br><a href="http://www.cnblogs.com/cython/articles/2169009.html" target="_blank" rel="external">Python：itertools模块</a><br><a href="http://blog.csdn.net/xiaocaiju/article/details/6968123" target="_blank" rel="external">python itertools的使用</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最开始是遇到一个问题，如何在以&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;cod
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="Q&amp;amp;A" scheme="http://yoursite.com/tags/Q-amp-A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo主题yilia</title>
+    <link href="http://yoursite.com/2017/03/14/theme-yilia/"/>
+    <id>http://yoursite.com/2017/03/14/theme-yilia/</id>
+    <published>2017-03-14T13:53:55.000Z</published>
+    <updated>2017-03-14T13:59:49.473Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Hexo主题yilia"><a href="#Hexo主题yilia" class="headerlink" title="Hexo主题yilia"></a><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">Hexo主题yilia</a></h3><p>喜欢这个主题的原因是头像框是圆形的，配我的头像很好看~（虽然可以改主题的css文件，不过太麻烦了）<br>yilia的缺点，或者说与其他主题不同是它没有catagory，不过用多个tag也可以解决，不算什么大事~</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Hexo主题yilia&quot;&gt;&lt;a href=&quot;#Hexo主题yilia&quot; class=&quot;headerlink&quot; title=&quot;Hexo主题yilia&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/litten/hexo-theme-yilia&quot; 
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA的Random类[转]</title>
     <link href="http://yoursite.com/2017/03/02/java-random/"/>
     <id>http://yoursite.com/2017/03/02/java-random/</id>
     <published>2017-03-02T14:41:12.000Z</published>
-    <updated>2017-03-02T15:34:57.944Z</updated>
+    <updated>2017-03-14T15:15:47.971Z</updated>
     
     <content type="html"><![CDATA[<p>转自<a href="http://www.cnblogs.com/Fskjb/archive/2009/08/29/1556417.html" target="_blank" rel="external">JAVA的Random类[转]</a></p>
 <hr>
 <h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><ol>
-<li>Random对象的生成<br>Random r1 = new Random();<br>Random r2 = new Random(10);    //参数表述种子数</li>
-<li>Random类常用方法<br>public boolean nextBoolean()   //生成一个随机的boolean值<br>public double nextDouble()     //生成一个[0,1.0)之间的随机double值<br>public int nextInt()           //生成一个随机的int值<br>public int nextInt(int n)      //生成一个[0,n)之间的随机int值<br>public void setSeed(long seed) //重设种子数</li>
+<li><p>Random对象的生成</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Random r1 = <span class="keyword">new</span> Random();</div><div class="line">Random r2 = <span class="keyword">new</span> Random(<span class="number">10</span>);    <span class="comment">//参数表述种子数</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Random类常用方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">nextBoolean</span><span class="params">()</span>   <span class="comment">//生成一个随机的boolean值</span></span></div><div class="line"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">nextDouble</span><span class="params">()</span>     <span class="comment">//生成一个[0,1.0)之间的随机double值</span></div><div class="line"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">nextInt</span><span class="params">()</span>           <span class="comment">//生成一个随机的int值</span></div><div class="line"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">nextInt</span><span class="params">(<span class="keyword">int</span> n)</span>      <span class="comment">//生成一个[0,n)之间的随机int值</span></div><div class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSeed</span><span class="params">(<span class="keyword">long</span> seed)</span> <span class="comment">//重设种子数</span></div></pre></td></tr></table></figure>
+</li>
 </ol>
 <hr>
 <h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
@@ -43,6 +93,8 @@
     </summary>
     
     
+      <category term="Q&amp;amp;A" scheme="http://yoursite.com/tags/Q-amp-A/"/>
+    
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
@@ -52,7 +104,7 @@
     <link href="http://yoursite.com/2017/02/05/first/"/>
     <id>http://yoursite.com/2017/02/05/first/</id>
     <published>2017-02-05T14:15:32.000Z</published>
-    <updated>2017-02-07T03:08:34.433Z</updated>
+    <updated>2017-03-13T14:14:18.732Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Hexo-Github-Pages搭建教程"><a href="#Hexo-Github-Pages搭建教程" class="headerlink" title="Hexo + Github Pages搭建教程"></a>Hexo + Github Pages搭建教程</h2><p><a href="http://jiji262.github.io/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="external">手把手教你使用Hexo + Github Pages搭建个人独立博客</a><br><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a><br><a href="http://www.pchou.info/ssgithubPage/2013-01-03-build-github-blog-page-01.html" target="_blank" rel="external">一步步在GitHub上创建博客主页</a></p>
 ]]></content>
@@ -63,6 +115,8 @@
     
     </summary>
     
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
