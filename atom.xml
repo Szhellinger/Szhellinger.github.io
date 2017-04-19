@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-06T14:52:16.128Z</updated>
+  <updated>2017-04-19T15:25:47.854Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,264 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的MarkDown语法笔记</title>
+    <link href="http://yoursite.com/2017/04/19/my-markdown-note/"/>
+    <id>http://yoursite.com/2017/04/19/my-markdown-note/</id>
+    <published>2017-04-19T15:24:50.000Z</published>
+    <updated>2017-04-19T15:25:47.854Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="我的MarkDown语法笔记"><a href="#我的MarkDown语法笔记" class="headerlink" title="我的MarkDown语法笔记"></a>我的MarkDown语法笔记</h1><p>这是我自己风格的语法笔记，用来展示如何使用MarkDown语法。<br>MarkDown是兼容HTML的并且是为了转成HTML格式的。<br>所以只能表示出HTML标签能够呈现出的效果。<br>使用蚂蚁笔记的好处是它支持左边MarkDown右边HTML的效果。<br>（注：蚂蚁笔记cannot show the preview of <em> and _ in English words correctly, </em>like*<em>this</em>）</p>
+<hr>
+<h2 id="首先是标题"><a href="#首先是标题" class="headerlink" title="首先是标题"></a>首先是<strong>标题</strong></h2><p>可以在文字下面使用任意数量的===或者—，分别表示一阶标题和二阶标题<br>我是一阶标题（=）<br>=</p>
+<h2 id="我是二阶标题（-）"><a href="#我是二阶标题（-）" class="headerlink" title="我是二阶标题（-）"></a>我是二阶标题（-）</h2><p>也可以直接在文字前加n个#后面加空格表示n阶标题</p>
+<h1 id="一姐"><a href="#一姐" class="headerlink" title="一姐"></a>一姐</h1><h2 id="二姐"><a href="#二姐" class="headerlink" title="二姐"></a>二姐</h2><h3 id="三姐"><a href="#三姐" class="headerlink" title="三姐"></a>三姐</h3><h4 id="四姐"><a href="#四姐" class="headerlink" title="四姐"></a>四姐</h4><h5 id="五姐"><a href="#五姐" class="headerlink" title="五姐"></a>五姐</h5><h6 id="六姐（最多只有六阶标题，而且和五阶差不多大）"><a href="#六姐（最多只有六阶标题，而且和五阶差不多大）" class="headerlink" title="六姐（最多只有六阶标题，而且和五阶差不多大）"></a>六姐（最多只有六阶标题，而且和五阶差不多大）</h6><p>####### 小妹（小妹前面是7个#，多了一个显示出来了）</p>
+<hr>
+<blockquote>
+<h2 id="如果想要高大上的区块效果在文字前加-gt-（不要忘了空格）"><a href="#如果想要高大上的区块效果在文字前加-gt-（不要忘了空格）" class="headerlink" title="如果想要高大上的区块效果在文字前加&gt;（不要忘了空格）"></a>如果想要高大上的<strong>区块效果</strong>在文字前加&gt;（不要忘了空格）</h2><p>区块效果会一直延续下去，直到第一个空行或者下一个非空行仍是以&gt;开头<br>也就是说区块中的文字就算不打&gt;也会在区块中<br>另外还要注意分割线和区块内段落，都需要空行才是想要的效果</p>
+<blockquote>
+<p>并且可以在区块中进行嵌套，只要行首有两个&gt;&gt;就可以</p>
+<blockquote>
+<p>还可以继续嵌</p>
+<blockquote>
+<p>无穷无尽。。。<br>但跳出某一个嵌套区块需要一个空行</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>区块中可以正常使用其他MarkDown语法</p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><ul>
+<li>段落</li>
+</ul>
+<p>区块中的代码不适宜直接空四格或者Tab，要使用反引号`<br><code>String daima = &quot;代码&quot;;</code></p>
+</blockquote>
+<hr>
+<h2 id="MarkDown支持有序列表和无序列表"><a href="#MarkDown支持有序列表和无序列表" class="headerlink" title="MarkDown支持有序列表和无序列表"></a>MarkDown支持<strong>有序列表和无序列表</strong></h2><ul>
+<li>无序列表使用*、+、-作为标记，作用等同</li>
+</ul>
+<ol>
+<li>有序列表使用数字+.来表示</li>
+<li>数字的数值并不影响呈现</li>
+<li>因为在HTML里最后都是被转为<code>&lt;li&gt;Bird&lt;/li&gt;</code></li>
+</ol>
+<ul>
+<li>可以有两层无序列表<ul>
+<li>在*前加空格即可</li>
+<li>这时列表标识符会变成空心圆</li>
+</ul>
+<ol>
+<li>在无需列表中加入有序列表，有序列表自动变为低级列表</li>
+<li>在第二层列表之后加如有序列表会变成第三层列表</li>
+<li>有序列表没有多层</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="可以插入代码区块"><a href="#可以插入代码区块" class="headerlink" title="可以插入代码区块"></a>可以插入<strong>代码区块</strong></h2><p>教程中给出的空4格方法不知道为什么没有作用<br>行内代码可以用反引号`进行标注，如<code>代码</code><br>大段的代码可以用\<figure class="highlight plain"><figcaption><span>代码```表示</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">如</div><div class="line">```java</div><div class="line">public static void main(String [] args) &#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a><strong>分隔线</strong></h2><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。</p>
+<hr>
+<h2 id="链接和图片"><a href="#链接和图片" class="headerlink" title="链接和图片"></a><strong>链接和图片</strong></h2><p>插入图片和链接的写法相似：<br><code>This is [an example](http://example.com/ &quot;Title&quot;) inline link.</code><br>This is <a href="http://example.com/" title="Title" target="_blank" rel="external">an example</a> inline link.<br>也可以这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [Google] [1] than from [Yahoo] [2] or [MSN] [3].</div><div class="line">  [1]: http://google.com/        &quot;Google&quot;</div><div class="line">  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;</div><div class="line">  [3]: http://search.msn.com/    &quot;MSN Search&quot;</div></pre></td></tr></table></figure></p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from<a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
+<p>图片的语法：<br><code>![Alt text](/path/to/img.jpg &quot;Optional title&quot;)</code><br><img src="/path/to/img.jpg" alt="Alt text" title="Optional title"><br>或是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">![Alt text][id]</div><div class="line">[id]: url/to/image  &quot;Optional title attribute&quot;</div></pre></td></tr></table></figure></p>
+<p><img src="url/to/image" alt="Alt text" title="Optional title attribute"></p>
+<hr>
+<h2 id="MarkDown-粗体和斜体"><a href="#MarkDown-粗体和斜体" class="headerlink" title="MarkDown 粗体和斜体"></a>MarkDown <strong>粗体和斜体</strong></h2><p>强调用<em>或者_在想要强调的文字两边<br>一个\</em>或_表示<em>斜体</em><br>两个*或_表示<strong>粗体</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;我的MarkDown语法笔记&quot;&gt;&lt;a href=&quot;#我的MarkDown语法笔记&quot; class=&quot;headerlink&quot; title=&quot;我的MarkDown语法笔记&quot;&gt;&lt;/a&gt;我的MarkDown语法笔记&lt;/h1&gt;&lt;p&gt;这是我自己风格的语法笔记，用来展示如何使用M
+    
+    </summary>
+    
+    
+      <category term="MarkDown" scheme="http://yoursite.com/tags/MarkDown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jenkov Java Tutorials总结</title>
+    <link href="http://yoursite.com/2017/04/19/jenkov-java-tutorials/"/>
+    <id>http://yoursite.com/2017/04/19/jenkov-java-tutorials/</id>
+    <published>2017-04-19T15:24:33.000Z</published>
+    <updated>2017-04-19T15:28:45.191Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>x.equals(y)，x和y的HashCode必然一样</li>
+<li>Java main函数里面的参数名称可以改变</li>
+<li>Math.min()中的参数是根据返回值来定的，参数的类型需要能被转成返回值的类型</li>
+<li>double Math.power(double, double)</li>
+<li>int [] ints2 = {1,2,3,4,5,6,7,8,9,10};</li>
+<li>Arrays.copyOf(T[]), Arrays.copyOfRange(T[], int start, int end)</li>
+<li>Arrays.toString()转化为字符串</li>
+<li><p>Arrays.sort() </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Arrays.sort(T[], <span class="keyword">new</span> Comparator&lt;T&gt;() &#123;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(T t1, T t2)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> t1.compareTo(t2);&#125;</div><div class="line">  &#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>Arrays.fill()用来填充数组, Arrays.fill(T[], start, end, value)</p>
+</li>
+<li>Arrays.binarySearch(T[], value)对排序好的数据进行二分查找。如果数组内有多个该元素，不能确定返回的是哪一个。如果数组内没有该元素，返回该元素应该在的索引的负值-1。Arrays.binarySearch(T[], atart, end, value)与上述相似。</li>
+<li>Arrays.equals()判断两个数组是否完全相等</li>
+<li>String内部是以UTF16表示的，每个字符2个byte</li>
+<li>尽量用StringBuilder来进行String的拼接</li>
+<li>String.equalsIgnoreCase()忽略大小写的相等判断</li>
+<li>String.trim()用于去掉字符串前后的空字符</li>
+<li>String.split(regex, length)中的length是指划分后返回的字符串数组的最大长度</li>
+<li>从java1.7开始，switch()可以是int, byte, char, short, String, enum</li>
+<li>[access_modifier] [static] [final] type name [= initial value] ;</li>
+<li>Java字段访问修饰符：<ul>
+<li>private：只有类本身内部的代码可以访问这个字段</li>
+<li>package：只有类本身或其他在同一package中的类可以访问，如果不加修饰符默认为package</li>
+<li>protected：与package类似，除了类的子类也可以访问字段</li>
+<li>public：程序中的所有类都可以访问</li>
+</ul>
+</li>
+<li>Java静态字段位于类中，不在类的实例中；非静态字段位于类的实例中</li>
+<li>子类不继承父类的构造函数，但需要在某一个构造函数中调用父类的构造函数(super())</li>
+<li>source目录不是一个包（package）</li>
+<li>类修饰符的优先级大于类中字段、方法的优先级（覆盖）</li>
+<li>Interface中的方法不能添加protected和private修饰符，默认是public</li>
+<li>子类的方法不能减少重写方法的可访问性，只能保留或者扩展，目的是让父类能做的事情，子类也必须能做</li>
+<li>可以用instanceof来判断实例是否是某个特定类的实例，boolean b = car instanceof Vehicle，子类是父类的实例，父类不是子类的实例</li>
+<li>Java中字段是不能被重写的，子类中如果出现了与父类同名的字段就会覆盖该字段</li>
+<li>如果子类调用超类中的方法，并且该方法访问与子类名称相同的字段，那么父类中的字段将被访问</li>
+<li>Java内部类也会生成.class文件，匿名内部类也会生成名为Main\$1.class的文件，接口也会生成class文件，如果类在主类外部定义，名称就是类名.class，如果在主类内部定义就是Main\$类名.class，接口也有.class文件</li>
+<li>子类的构造函数会先调用父类的构造函数，再在父类之后进行其他工作</li>
+<li>子类中的方法使用super，如果是构造函数要放在第一行，如果不是构造则不用</li>
+<li>嵌套类(nested class)及其封闭类(enclosing class)，有四种类型：<ul>
+<li>Static nested class</li>
+<li>Non-static nested class</li>
+<li>Local class</li>
+<li>Anonymous class</li>
+</ul>
+</li>
+<li>如果静态内部类想要调取外部类的私有对象（内部类已经覆盖了该字段），需用Outer.this.字段</li>
+<li>从Java8开始，local class可以访问外部方法的参数，参数需要被声明为final或者有效的final，即从初始化后没有被修改过</li>
+<li>本地类实质上是非静态的</li>
+<li>嵌套类的好处是可以将属于一起的类组合在一起，更强的组合</li>
+<li>抽象类不能被实例化，有抽象方法的一定是抽象类，抽象类也有非抽象方法，抽象方法不能有函数体，如果一个非抽象类继承了抽象类，它需要实现抽象类中的所有抽象方法</li>
+<li>接口中的方法不能有实现，实现接口的类需要实现所有方法，可以像类的继承一样声明接口对象，实例化为一个实现了接口的类，MyInterface my = new MyInterfaceClass();</li>
+<li><ul>
+<li>实现多个接口时可能出现签名一致的情况，由程序员来决定怎么做；</li>
+<li>接口中所有的变量都是public；</li>
+<li>接口中所有的方法都是public的；</li>
+<li>可以使用default标记接口中的方法为默认方法，必须拥有实现；</li>
+<li>接口可以继承接口（extends），也可以继承多个接口，签名冲突由程序员解决；</li>
+<li>在一个类实现多个接口时，或者一个接口继承多个接口时，如果有签名重复，并且其中至少一个接口的该方法被声明为默认方法，则实现多个接口的类或者实现多重继承接口的类必须给出该签名的显式实现；</li>
+<li>接口可以实现多态（Polymorphism）</li>
+</ul>
+</li>
+<li><ul>
+<li>Java5开始包含enum（枚举）；</li>
+<li>enum是一种特殊的Java类；public enum Level {high, medium, low}；</li>
+<li>Level l = Level.high;；</li>
+<li>enum可以放在switch中；</li>
+<li>可以用for (Level l : Level.values())遍历枚举类型的所有值，.values()是enum对象的静态函数</li>
+</ul>
+</li>
+<li>Java enum可以有字段，实现如下：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">public</span> <span class="keyword">enum</span> Level &#123;</div><div class="line">   high(<span class="number">3</span>),</div><div class="line">   medium(<span class="number">2</span>),</div><div class="line">   low(<span class="number">1</span>)</div><div class="line">;</div><div class="line">   <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> code;</div><div class="line">   <span class="function"><span class="keyword">private</span> <span class="title">Level</span><span class="params">(<span class="keyword">int</span> code)</span> </span>&#123;</div><div class="line">     <span class="keyword">this</span>.code = code;</div><div class="line">   &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>Each constant enum value gets these fields. The field values must be suppliedto the constructor of the enum when defining the constants。Enum构造器只能是private或者默认的package。字段可以不是final的，即可以修改，但这种做法不提倡，因为enum应该是常量</p>
+<ul>
+<li>Java enum可以有方法，方法可以是public，可以访问enum中的字段；enum不能继承其他类，因为enum是从java.lang.Enum中隐式继承的；enum中的字段和方法必须要在常量列表之后，并且常量列表必须以分号结尾</li>
+<li>Java注释（annotation）用于为Java代码提供元数据，作为元数据，annotation不直接影响代码的执行</li>
+<li>Java annotation通常用于以下目的<ul>
+<li>Compiler instructions</li>
+<li>Build-time instructions</li>
+<li>Runtime instructions(通过反射访问)</li>
+</ul>
+</li>
+<li>Annotation长这样：@Entity，@Entity(table = “vehicle”, key = “id”)，<br>如果只有一个元素可以写value，@Entity(value = “yes”)，value可以省略</li>
+<li>注释可以放在类、接口、方法、方法参数、字段和局部变量之上</li>
+<li><p>@Deprecated注释被弃用的类、方法或字段，当调用这些类方法字段时会发出警告；<br>同时要加上原因与替代方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Deprecated</span></div><div class="line"><span class="comment">/**</span></div><div class="line">  <span class="doctag">@deprecated</span> Use MyNewComponent instead.</div><div class="line">*/</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyComponent</span> </span>&#123;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>@Override用于注释重写父类方法的方法，如果该方法与父类中方法不匹配，则编译报错</p>
+</li>
+<li>@SupressWarning注释使编译器抑制对某个方法的警告</li>
+<li>创建自己的注释：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@interface</span> MyAnnotation &#123;</div><div class="line">  <span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> ""</span>;</div><div class="line">  <span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span></span>;</div><div class="line">  String[] names();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>关键字@interface告诉编译器这是Java注释，注释中的元素只能是原始数据类型和String及<br>他们的数组；使用default来指定元素默认值</p>
+<ul>
+<li>@Rention<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.lang.annotation.Retention;</div><div class="line"><span class="keyword">import</span> java.lang.annotation.RetentionPolicy;</div><div class="line"><span class="meta">@Retention</span>（RetentionPolicy.RUNTIME）</div><div class="line"><span class="meta">@interface</span> MyAnnotation &#123;</div><div class="line">    String value（）<span class="keyword">default</span>“”;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>@Rention注释说明这个注释会保留到哪个阶段，RetentionPolicy.RUNTIME保留到运行时，可以<br>通过反射来获得，.CLASS（默认）存储到.class文件中，.SOURCE仅保存在源代码中</p>
+<ul>
+<li>@Target<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.lang.annotation.ElementType;</div><div class="line"><span class="keyword">import</span> java.lang.annotation.Target;</div><div class="line"><span class="meta">@Target</span>(&#123;ElementType.METHOD&#125;)</div><div class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</div><div class="line">    <span class="function">String   <span class="title">value</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>@Target注释说明该注释可以作用于哪些目标，包括{ANNOTATION_TYPE,CONSTRUCTOR,FIELD,<br>LOCAL_VARIABLE,METHOD,PACKAGE,PARAMETER,TYPE},其中TYPE指所有类型</p>
+<ul>
+<li>@Inherited<br>被@Inherited注释的类被继承时，子类同时也继承了该注释</li>
+<li>@Documented表示这个注释应该被JavaDoc记录</li>
+<li>Lambda是Java8中新加入的。常常用于匿名内部类的替代，简写，漂亮的简洁的实现。<br>Lambda表达式只能用于单方法接口（功能接口）的实现，如监听器、线程、比较器。<br>Lambda表达式的使用必须满足以下条件：接口只能有一个方法；表达式的参数匹配方法的参数；<br>表达式的返回类型匹配方法的返回类型。Lambda表达式可以自己进行类型推断。写法如下：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">() -&gt; System.out.println(<span class="string">""</span>);</div><div class="line">(param1, param2, ...) -&gt; &#123;</div><div class="line">  instructions;</div><div class="line">  <span class="keyword">return</span> ;</div><div class="line">&#125;</div><div class="line">param -&gt; param &gt; <span class="number">0</span>;</div><div class="line">sort((a, b) -&gt; a.compareTo(b));</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>Lambda表达式本质上是一个对象，可以复制给一个接口的变量，代表其实现</p>
+<ul>
+<li>Graphical overview of the Collection interface hierarchy<br><img src="https://leanote.com/api/file/getImage?fileId=58f05ff5ab6441486300712f" alt="Collection继承图"></li>
+<li>Graphical overview of the Map interface hierarchy<br><img src="https://leanote.com/api/file/getImage?fileId=58f060ecab6441451000734f" alt="Map继承图"></li>
+<li><p>Collection的子类：<br>List, Set, SortedSet, NavagableSet, Queue, Deque<br>方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">collection.add();</div><div class="line">collection.addAll();</div><div class="line">collection.remove();</div><div class="line">collection.removeAll();</div><div class="line">collection.retainAll();</div><div class="line">collection.contains();</div><div class="line">collection.containsAll();</div></pre></td></tr></table></figure>
+</li>
+<li><p>Set是一个接口，实现有：</p>
+<ul>
+<li>HashSet：以HashMap实现，不保证顺序</li>
+<li>LinkedHashSet：以放入的顺序存储</li>
+<li>TreeSet：以元素的顺序存储<br>HashSet可以包含不同类型的对象，TreeSet不行，会在运行时报错：class1 cannot be cast to class2；如果是自行定义的类需要实现Comparable接口，否则报错</li>
+</ul>
+</li>
+<li>Map是一个接口，实现有：<br>java.util.HashMap, Hashtable, EnumMap, IdentityHashMap, LinkedHashMap, Properties, TreeMap, WeakHashMap</li>
+<li>Deque是双向队列</li>
+<li>相同的对象Hash码必然一致，拥有同样Hash码的两个对象不一定相等</li>
+</ul>
+<hr>
+<ul>
+<li>多线程的优点<ul>
+<li>更好地利用资源</li>
+<li>在某些情况下程序设计更简单</li>
+<li>更加交互式的程序</li>
+</ul>
+</li>
+<li>多线程的代价<br>在考虑使用多线程而不是单线程时需要对性能和响应能力进行衡量，务必使得获得的好处会超过付出的代价。<ul>
+<li>更复杂的设计</li>
+<li>上下文切换开销</li>
+<li>资源消耗增加</li>
+</ul>
+</li>
+<li>并发系统可以用不同的并发模型实现，并发模型指定系统的线程如何协同完成作业。并发系统与分布式系统十分相似，两者的设计思想可以互相借鉴，如负载平衡、异常处理操作等。</li>
+<li>Parallel Workers<br>进入的作业被委托者（delegator）分配给不同的工作人员：<br><img src="https://leanote.com/api/file/getImage?fileId=58f4b612ab64415134003de3" alt="Parallel Workers"><br>每个工作人员会完成整个工作，工作人员并行进行工作，运行在不同的线程，甚至在不同的CPU上<ul>
+<li>优势：易于理解，要增加程序的并行化，只需添加更多的员工</li>
+<li>缺点：共享状态可以很复杂，工作进行与完成的顺序无法确定<br><img src="https://leanote.com/api/file/getImage?fileId=58f7011dab64414e1d006479" alt="更复杂的模型"></li>
+</ul>
+</li>
+<li>Assembly Line<br>工人像工厂中流水线上的工人一样，每个工人只执行完整工作的一部分，当该部分完成时，作业将被转发到下一个工作人员。<br><img src="https://leanote.com/api/file/getImage?fileId=58f705f8ab64414e1d006500" alt="流水线模式图"><br>每个工作人员都在自己的线程中运行，与其他工作人员不分享任何状态，也被称为shared nothing 并发模式<br>装配线实际上可能更复杂，工作可能有多条流水线，每一名员工也并不是只在一条流水线上<br><img src="https://leanote.com/api/file/getImage?fileId=58f71f51ab644151340068c3" alt="更复杂的流水线"><br><img src="https://leanote.com/api/file/getImage?fileId=58f720a1ab644151340068f9" alt="Actor&amp;Channel"><ul>
+<li>优势：不需要共享状态；工人可以在内存中保留他们需要的数据，可以获得更快的工作速度；更好的硬件一致性</li>
+<li>缺点：作业的执行通常会分散给多个工作人员，从而跨越项目中的多个类，更难看出给定作业正在执行哪些代码</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;x.equals(y)，x和y的HashCode必然一样&lt;/li&gt;
+&lt;li&gt;Java main函数里面的参数名称可以改变&lt;/li&gt;
+&lt;li&gt;Math.min()中的参数是根据返回值来定的，参数的类型需要能被转成返回值的类型&lt;/li&gt;
+&lt;li&gt;double Mat
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="Interview" scheme="http://yoursite.com/tags/Interview/"/>
+    
+  </entry>
   
   <entry>
     <title>interview</title>
